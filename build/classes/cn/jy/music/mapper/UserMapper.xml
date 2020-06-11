@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="cn.jy.music.mapper.UserMapper">
+  <select id="login" parameterType="cn.jy.music.pojo.User" resultType="cn.jy.music.pojo.User">
+  		select * from user where username = #{username} and password = #{password}
+  </select>
+</mapper>
